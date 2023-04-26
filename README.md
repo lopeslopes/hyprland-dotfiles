@@ -11,9 +11,7 @@ Some packages you'll need to replicate this are:
 - Hyprpaper (wallpaper)
 - Swaylock (screen lock)
 
-I also use Sakura as my terminal emulator and pavucontrol for sound management, so make sure to change this to your used applications in the `hypr/hyprland.conf` file.
-
-Note: My NVIDIA gpu requires some env variables settings in `hypr/hyprland.conf`, change that as needed if you use other gpus.
+I also added my neovim configuration folder, that was made following the neovim guide by ThePrimeagen on youtube.
 
 To do:
 - Create css file with standardized colors for all applications, to make it easier to setup a theme.
