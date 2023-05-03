@@ -1,24 +1,62 @@
+/* COLOR THEME SETTINGS */
+
+/* theme 1 - dim red/yellow */
 /*
-scheme: "Nord"
-author: "arcticicestudio"
+@define-color accent1_str_t rgba(56,90,39,0.6);
+@define-color accent1_wk    #82a259;
+@define-color accent1_str   #385a27;
+@define-color light_text    #f8f8f2;
+@define-color light_text2   #a1a1a1;
+@define-color dark_text     #303030;
+@define-color dark_bg       rgba(48,48,48,0.9);
 */
 
-@define-color base10 #2E3440;
-@define-color base00 #3B4252;
-@define-color base02 #434C5E;
-@define-color base03 #4C566A;
-@define-color base04 #D8DEE9;
-@define-color base05 #E5E9F0;
-@define-color base06 #ECEFF4;
-@define-color base07 #8FBCBB;
-@define-color base08 #88C0D0;
-@define-color base09 #81A1C1;
-@define-color base0A #5E81AC;
-@define-color base0B #BF616A;
-@define-color base0C #D08770;
-@define-color base0D #EBCB8B;
-@define-color base0E #A3BE8C;
-@define-color base0F #B48EAD;
+/* theme 2 - strong red/orange */
+/*
+@define-color accent1_str_t rgba(56,90,39,0.6);
+@define-color accent1_wk    #82a259;
+@define-color accent1_str   #385a27;
+@define-color light_text    #f8f8f2;
+@define-color light_text2   #a1a1a1;
+@define-color dark_text     #303030;
+@define-color dark_bg       rgba(48,48,48,0.9);
+*/
+
+/* theme 3 - green */
+
+@define-color accent1_str_t rgba(56,90,39,0.6);
+@define-color accent1_wk    #82a259;
+@define-color accent1_str   #385a27;
+@define-color light_text    #f8f8f2;
+@define-color light_text2   #a1a1a1;
+@define-color dark_text     #303030;
+@define-color dark_bg       rgba(48,48,48,0.9);
+
+
+/* theme 4 - blue */
+/*
+@define-color accent1_str_t rgba(56,90,39,0.6);
+@define-color accent1_wk    #82a259;
+@define-color accent1_str   #385a27;
+@define-color light_text    #f8f8f2;
+@define-color light_text2   #a1a1a1;
+@define-color dark_text     #303030;
+@define-color dark_bg       rgba(48,48,48,0.9);
+*/
+
+/* theme 5 - greenish blue/yellow */
+/*
+@define-color accent1_str_t rgba(56,90,39,0.6);
+@define-color accent1_wk    #82a259;
+@define-color accent1_str   #385a27;
+@define-color light_text    #f8f8f2;
+@define-color light_text2   #a1a1a1;
+@define-color dark_text     #303030;
+@define-color dark_bg       rgba(48,48,48,0.9);
+*/
+
+
+/* PROPER SETTINGS */
 
 #entry {
 padding: 5px 2px 5px 2px;
@@ -31,13 +69,13 @@ margin: 0px 4px 0px 4px;
 }
 
 #entry:selected {
-color: @base0D;
-background-color: rgba (135,41,25,0.6);
+color: @accent1_wk;
+background-color: @accent1_str_t;
 padding: 7px;
 }
  
 #text:selected {
-color: @base04;
+color: @light_text;
 }
  
 #window {
@@ -54,16 +92,16 @@ background-color: rgba (0,0,0,0.9);
 border-radius: 16px;
 margin: 4px 4px 8px 4px;
 padding: 8px;
-color: #a1a1a1;
+color: @light_text2;
 }
 
 #inner-box {
-color: rgba (255,0,0,0.5);
+color: @accent1_str;
 border-radius: 16px;
 }
 
 #outer-box {
-background-color: rgba (28,28,28,0.9);
+background-color: @dark_bg;
 border-radius: 16px;
 border: 1px solid #474747;
 padding: 10px;
@@ -75,7 +113,7 @@ margin: 25px;
 }
 
 #text {
-color: #a1a1a1;
+color: @light_text2;
 background-color: transparent;
 } 
 

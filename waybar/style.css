@@ -1,4 +1,52 @@
-/*@import url('/home/aaditya/.cache/wal/colors-waybar.css');*/
+/* theme 1 - dim red/yellow */
+/*
+@define-color accent1_str #872919;
+@define-color accent1_wk  #964435;
+@define-color accent2     #dcb375;
+@define-color light_text  #f8f8f2;
+@define-color dark_text   #303030;
+@define-color dark_bg     #303030;
+*/
+
+/* theme 2 - strong red/orange */
+/*
+@define-color accent1_str #872919;
+@define-color accent1_wk  #964435;
+@define-color accent2     #dcb375;
+@define-color light_text  #f8f8f2;
+@define-color dark_text   #303030;
+@define-color dark_bg     #303030;
+*/
+
+/* theme 3 - green */
+
+@define-color accent1_str #385a27;
+@define-color accent1_wk  #82a259;
+@define-color accent2     #385a27;
+@define-color light_text  #f8f8f2;
+@define-color dark_text   #303030;
+@define-color dark_bg     #303030;
+
+
+/* theme 4 - blue/yellow */
+/*
+@define-color accent1_str #872919;
+@define-color accent1_wk  #964435;
+@define-color accent2     #dcb375;
+@define-color light_text  #f8f8f2;
+@define-color dark_text   #303030;
+@define-color dark_bg     #303030;
+*/
+
+/* theme 5 - greenish blue/yellow */
+/*
+@define-color accent1_str #872919;
+@define-color accent1_wk  #964435;
+@define-color accent2     #dcb375;
+@define-color light_text  #f8f8f2;
+@define-color dark_text   #303030;
+@define-color dark_bg     #303030;
+*/
 
 * {
 	border: none;
@@ -31,33 +79,133 @@ window#waybar.hidden {
 	margin-left: 12px;
 	margin-bottom: 0;
 	border-radius: 6px;
-	background: #303030;
+	background: @dark_bg;
 	transition-duration: 0.2s;
 }
 
 #workspaces button {
 	padding: 0 10px;
 	transition-duration: 0.2s;
-	color: #f8f8f2;
+	color: @light_text;
 	background: transparent;
 	font-size: 16px;
 }
 
 #workspaces button.focused {
-	color: #f8f8f2;
+	color: @light_text;
 }
 
 #workspaces button:hover {
 	transition-duration: 0.2s;
 	box-shadow: inherit;
 	text-shadow: inherit;
-	color: #872919;
+	color: @accent1_str;
 }
 
 #workspaces button.active {
-        background: #dcb375;
+        background: @accent2;
         border-radius: 6px;
-        color: #303030;
+        color: @light_text;
+}
+
+#network {
+	margin-top: 8px;
+	margin-left: 8px;
+	padding-left: 16px;
+	padding-right: 16px;
+	margin-bottom: 0;
+	border-radius: 6px;
+	transition: none;
+	color: @light_text;
+	background: linear-gradient(to bottom right, @accent1_str, @accent1_wk);
+}
+
+#pulseaudio {
+	margin-top: 8px;
+	margin-left: 8px;
+	padding-left: 16px;
+	padding-right: 16px;
+	margin-bottom: 0;
+	border-radius: 6px;
+	transition: none;
+	color: @light_text;
+	background: linear-gradient(to bottom right, @accent1_str, @accent1_wk);
+}
+
+#temperature {
+	margin-top: 8px;
+	margin-left: 8px;
+	padding-left: 16px;
+	padding-right: 16px;
+	margin-bottom: 0;
+	border-radius: 6px;
+	transition: none;
+	color: @light_text;
+	background: linear-gradient(to bottom right, @accent1_str, @accent1_wk);
+}
+
+#cpu {
+	margin-top: 8px;
+	margin-left: 8px;
+	padding-left: 16px; 
+	padding-right: 16px;
+	margin-bottom: 0;
+	border-radius: 6px;
+	transition: none;
+	color: @light_text;
+	background: linear-gradient(to bottom right, @accent1_str, @accent1_wk);
+}
+
+#memory {
+	margin-top: 8px;
+	margin-left: 8px;
+    margin-right: 8px;
+	padding-left: 16px;
+	padding-right: 16px;
+	margin-bottom: 0;
+	border-radius: 6px;
+	transition: none;
+	color: @light_text;
+	background: linear-gradient(to bottom right, @accent1_str, @accent1_wk);
+}
+
+#clock {
+	margin-top: 8px;
+	margin-left: 8px;
+	margin-right: 12px;
+	padding-left: 16px;
+	padding-right: 16px;
+	margin-bottom: 0;
+	border-radius: 6px;
+	transition: none;
+	color: @light_text;
+	background: @dark_bg;
+}
+
+#tray {
+	margin-top: 8px;
+	margin-left: 8px;
+	padding-left: 16px;
+	padding-right: 16px;
+	margin-bottom: 0;
+	border-radius: 6px;
+	transition: none;
+	color: @light_text;
+	background: @dark_bg;
+}
+
+/*
+#custom-waybar-media {
+	margin-top: 8px;
+	margin-left: 8px;
+	padding-left: 16px;
+	padding-right: 16px;
+	margin-bottom: 0;
+	border-radius: 6px;
+	background: #282a36;
+	transition: none;
+	color: @light_text;
+	background: #282a36;
 }
 
 #mpd {
@@ -74,111 +222,10 @@ window#waybar.hidden {
 
 #mpd.disconnected,
 #mpd.stopped {
-	color: #f8f8f2;
-	/*background: #282a36;*/
+	color: @light_text;
 }
 
-#network {
-	margin-top: 8px;
-	margin-left: 8px;
-	padding-left: 16px;
-	padding-right: 16px;
-	margin-bottom: 0;
-	border-radius: 6px;
-	transition: none;
-	color: #f8f8f2;
-	background: linear-gradient(to bottom right, #872919, #964435);
-}
-
-#pulseaudio {
-	margin-top: 8px;
-	margin-left: 8px;
-	padding-left: 16px;
-	padding-right: 16px;
-	margin-bottom: 0;
-	border-radius: 6px;
-	transition: none;
-	color: #f8f8f2;
-	background: linear-gradient(to bottom right, #872919, #964435);
-}
-
-#temperature {
-	margin-top: 8px;
-	margin-left: 8px;
-	padding-left: 16px;
-	padding-right: 16px;
-	margin-bottom: 0;
-	border-radius: 6px;
-	transition: none;
-	color: #f8f8f2;
-	background: linear-gradient(to bottom right, #872919, #964435);
-}
-
-#cpu {
-	margin-top: 8px;
-	margin-left: 8px;
-	padding-left: 16px; 
-	padding-right: 16px;
-	margin-bottom: 0;
-	border-radius: 6px;
-	transition: none;
-	color: #f8f8f2;
-	background: linear-gradient(to bottom right, #872919, #964435);
-}
-
-#memory {
-	margin-top: 8px;
-	margin-left: 8px;
-    margin-right: 8px;
-	padding-left: 16px;
-	padding-right: 16px;
-	margin-bottom: 0;
-	border-radius: 6px;
-	transition: none;
-	color: #f8f8f2;
-	background: linear-gradient(to bottom right, #872919, #964435);
-}
-
-#clock {
-	margin-top: 8px;
-	margin-left: 8px;
-	margin-right: 12px;
-	padding-left: 16px;
-	padding-right: 16px;
-	margin-bottom: 0;
-	border-radius: 6px;
-	transition: none;
-	color: #f8f8f2;
-	background: #362828;
-}
-
-
-#custom-waybar-media {
-	margin-top: 8px;
-	margin-left: 8px;
-	padding-left: 16px;
-	padding-right: 16px;
-	margin-bottom: 0;
-	border-radius: 6px;
-	background: #282a36;
-	transition: none;
-	color: #f8f8f2;
-	background: #282a36;
-}
-
-#tray {
-	margin-top: 8px;
-	margin-left: 8px;
-	padding-left: 16px;
-	padding-right: 16px;
-	margin-bottom: 0;
-	border-radius: 6px;
-	transition: none;
-	color: #f8f8f2;
-	background: #282a36;
-}
-
-/*#battery {
+#battery {
     margin-top: 8px;
     margin-left: 8px;
     margin-right: 8px;
@@ -187,7 +234,7 @@ window#waybar.hidden {
     margin-bottom: 0;
     border-radius: 6px;
     transition: none;
-    color: #f8f8f2;
+    color: @light_text;
 }
 
 #battery.plugged {
@@ -211,7 +258,7 @@ window#waybar.hidden {
     margin-bottom: 0;
     border-radius: 6px;
     transition: none;
-    color: #f8f8f2;
+    color: @light_text;
     background: linear-gradient(to bottom right, grey, #252525);
 }
 
@@ -226,13 +273,13 @@ window#waybar.hidden {
 
 #bluetooth.on {
     transition: none;
-    color: #f8f8f2;
+    color: @light_text;
     background: #282a36;
 }
 
 #bluetooth.connected {
     transition: none;
-    color: #f8f8f2;
+    color: @light_text;
     background: #252525;
 }
 
