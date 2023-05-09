@@ -1,8 +1,9 @@
-{
+[{
     "layer": "top",
-    "modules-left": ["wlr/workspaces", "custom/waybar-media", "tray"],
+    "modules-left": ["wlr/workspaces", "tray"],
     "modules-center": ["clock"],
-    "modules-right": ["network", "pulseaudio", "temperature", "cpu", "memory"],
+    "modules-right": ["network", "temperature", "cpu", "memory", "pulseaudio"],
+    "output": "HDMI-A-1",
 
     "wlr/workspaces": {
         "all-outputs": true,
@@ -10,42 +11,82 @@
         "on-scroll-up": "hyprctl dispatch workspace e-1",
         "on-scroll-down": "hyprctl dispatch workspace e+1",
         "sort-by-number": true
-
     },
+
+    "pulseaudio": {
+        "tooltip": false,
+        "scroll-step": 5,
+        "format": "{icon} {volume}%",
+        "format-icons": {
+		    "default": ["\udb81\udd7f" , "\udb81\udd80", "\udb81\udd7e"]
+	    },
+	    "on-click": "pavucontrol",
+        "format-muted": "\udb81\udf5f  {volume}%"
+    },
+
+    "network": {
+        "tooltip": false,
+        "font-size": 32,
+        "format-wifi": "\uf1eb",
+        "format-ethernet": "\udb84\udc87"
+    },
+
+    "cpu": {
+    	"interval": 10,
+    	"format": "\uf4bc  {usage}%",
+    	"max-length": 10
+    },
+
+    "memory": {
+	    "tooltip": false,
+        "format": "\udb82\uddd1  {}%"
+    },
+
+    "clock": {
+        "format": "{:%a | %d/%m/%y | %H:%M %p}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+
+    "tray": {
+        "spacing": 10
+    },
+
+     "temperature": {
+        "format": " {temperatureC}°C"
+    }
+},
+{
+    "layer": "top",
+    "modules-left": ["wlr/workspaces", "tray"],
+    "modules-center": ["clock"],
+    "modules-right": ["pulseaudio"],
+    "output": "DVI-D-1",
+
+    "wlr/workspaces": {
+        "all-outputs": true,
+        "on-click": "activate",
+        "on-scroll-up": "hyprctl dispatch workspace e-1",
+        "on-scroll-down": "hyprctl dispatch workspace e+1",
+        "sort-by-number": true
+    }, 
     
     "pulseaudio": {
         "tooltip": false,
         "scroll-step": 5,
         "format": "{icon} {volume}%",
         "format-icons": {
-		    "default": ["奄", "奔", "墳"]
+		    "default": ["\udb81\udd7f" , "\udb81\udd80", "\udb81\udd7e"]
 	    },
-	    "on-click": "pavucontrol"
-    },
-
-    "network": {
-        "tooltip": false,
-        "format-wifi": "",
-        "format-ethernet": ""
-    },
-
-    "cpu": {
-    	"interval": 10,
-    	"format": " {usage}%",
-    	"max-length": 10
-    },
-
-    "memory": {
-	    "tooltip": false,
-	    "format": " {}%"
+	    "on-click": "pavucontrol",
+        "format-muted": "\udb81\udf5f  {volume}%"
     },
 
     "clock": {
-        "format": "{:%A | %d/%m/%Y | %H:%M %p}",
+        "format": "{:%a | %d/%m/%y | %H:%M %p}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     },
 
     "tray": {
         "spacing": 10
     }
-}
+}]

@@ -51,7 +51,7 @@
 * {
 	border: none;
 	border-radius: 0;
-	font-family: Nerd Font Hack;
+	font-family: "Font Awesome 6 Free-Regular-400", "Noto Sans";
 	font-size: 14px;
 	min-height: 24px;
 }
@@ -69,9 +69,9 @@ window#waybar.hidden {
     padding-left: 16px;
     padding-right: 16px;
 	border-radius: 6px;
-	transition: none;
-    color: transparent;
-	background: transparent;
+    transition: none;
+    color: @light_text;
+	background: linear-gradient(to bottom right, @accent1_str, @accent1_wk);
 }
 
 #workspaces {
@@ -123,6 +123,7 @@ window#waybar.hidden {
 #pulseaudio {
 	margin-top: 8px;
 	margin-left: 8px;
+    margin-right: 8px;
 	padding-left: 16px;
 	padding-right: 16px;
 	margin-bottom: 0;
@@ -159,7 +160,6 @@ window#waybar.hidden {
 #memory {
 	margin-top: 8px;
 	margin-left: 8px;
-    margin-right: 8px;
 	padding-left: 16px;
 	padding-right: 16px;
 	margin-bottom: 0;
@@ -194,97 +194,15 @@ window#waybar.hidden {
 	background: @dark_bg;
 }
 
-/*
-#custom-waybar-media {
-	margin-top: 8px;
-	margin-left: 8px;
-	padding-left: 16px;
-	padding-right: 16px;
-	margin-bottom: 0;
-	border-radius: 6px;
-	background: #282a36;
-	transition: none;
-	color: @light_text;
-	background: #282a36;
-}
-
-#mpd {
-	margin-top: 8px;
-	margin-left: 8px;
-	padding-left: 16px;
-	padding-right: 16px;
-	margin-bottom: 0;
-	border-radius: 6px;
-	background: #282a36;
-	transition: none;
-	color: #4d4d4d;
-}
-
-#mpd.disconnected,
-#mpd.stopped {
-	color: @light_text;
-}
-
-#battery {
+#custom-media {
     margin-top: 8px;
-    margin-left: 8px;
+	margin-left: 8px;
     margin-right: 8px;
-    padding-left: 12px;
-    padding-right: 16px;
-    margin-bottom: 0;
-    border-radius: 6px;
-    transition: none;
-    color: @light_text;
+	padding-left: 16px;
+	padding-right: 16px;
+	margin-bottom: 0;
+	border-radius: 6px;
+	transition: none;
+	color: @light_text;
+	background: linear-gradient(to bottom right, @accent1_str, @accent1_wk);
 }
-
-#battery.plugged {
-    background: linear-gradient(to bottom right, blue, #252525);
-}
-
-#battery.charging {
-    background: linear-gradient(to bottom right, green, #252525);
-}
-
-#battery.discharging {
-    background: linear-gradient(to bottom right, red, #252525);
-}
-
-#backlight {
-    margin-top: 8px;
-    margin-left: 5px;
-    margin-right: 5px;
-    padding-left: 16px;
-    padding-right: 16px;
-    margin-bottom: 0;
-    border-radius: 6px;
-    transition: none;
-    color: @light_text;
-    background: linear-gradient(to bottom right, grey, #252525);
-}
-
-#bluetooth {
-    margin-top: 8px;
-    margin-left: 8px;
-    padding-left: 16px;
-    padding-right: 16px;
-    margin-bottom: 0;
-    border-radius: 6px;
-}
-
-#bluetooth.on {
-    transition: none;
-    color: @light_text;
-    background: #282a36;
-}
-
-#bluetooth.connected {
-    transition: none;
-    color: @light_text;
-    background: #252525;
-}
-
-#bluetooth.off {
-    transition: none;
-    color: #4d4d4d;
-    background: #252525;
-}*/

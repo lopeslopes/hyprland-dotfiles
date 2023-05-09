@@ -16,4 +16,4 @@ vim.opt.scrolloff = 8
 vim.opt.termguicolors = true
 
 vim.opt.foldmethod = "indent"
-vim.opt.foldlevel = 0
+vim.opt.foldlevel = 99
