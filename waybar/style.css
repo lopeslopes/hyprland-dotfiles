@@ -8,41 +8,21 @@
 @define-color dark_bg     #303030;
 */
 
-/* theme 2 - strong red/orange */
-/*
-@define-color accent1_str #872919;
-@define-color accent1_wk  #964435;
-@define-color accent2     #dcb375;
+/* theme 2 - red accents */
+
+@define-color accent1_str #bc0922;
+@define-color accent1_wk  #d34143;
+@define-color accent2     #d34143;
 @define-color light_text  #f8f8f2;
 @define-color dark_text   #303030;
 @define-color dark_bg     #303030;
-*/
+
 
 /* theme 3 - green */
-
+/*
 @define-color accent1_str #385a27;
 @define-color accent1_wk  #82a259;
 @define-color accent2     #385a27;
-@define-color light_text  #f8f8f2;
-@define-color dark_text   #303030;
-@define-color dark_bg     #303030;
-
-
-/* theme 4 - blue/yellow */
-/*
-@define-color accent1_str #872919;
-@define-color accent1_wk  #964435;
-@define-color accent2     #dcb375;
-@define-color light_text  #f8f8f2;
-@define-color dark_text   #303030;
-@define-color dark_bg     #303030;
-*/
-
-/* theme 5 - greenish blue/yellow */
-/*
-@define-color accent1_str #872919;
-@define-color accent1_wk  #964435;
-@define-color accent2     #dcb375;
 @define-color light_text  #f8f8f2;
 @define-color dark_text   #303030;
 @define-color dark_bg     #303030;
