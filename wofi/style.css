@@ -13,17 +13,17 @@
 
 /* theme 2 - red accents */
 
-@define-color accent1_str_t rgba(188, 9, 34, 0.6);
-@define-color accent1_wk    #d34143;
-@define-color accent1_str   #bc0922;
-@define-color light_text    #f8f8f2;
-@define-color light_text2   #a1a1a1;
-@define-color dark_text     #303030;
-@define-color dark_bg       rgba(48,48,48,0.9);
-
+/*@define-color accent1_str_t rgba(188, 9, 34, 0.6);*/
+/*@define-color accent1_wk    #d34143;*/
+/*@define-color accent1_str   #bc0922;*/
+/*@define-color light_text    #f8f8f2;*/
+/*@define-color light_text2   #a1a1a1;*/
+/*@define-color dark_text     #303030;*/
+/*@define-color dark_bg       rgba(48,48,48,0.9);*/
+/**/
 
 /* theme 3 - green */
-/*
+
 @define-color accent1_str_t rgba(56,90,39,0.6);
 @define-color accent1_wk    #82a259;
 @define-color accent1_str   #385a27;
@@ -31,7 +31,7 @@
 @define-color light_text2   #a1a1a1;
 @define-color dark_text     #303030;
 @define-color dark_bg       rgba(48,48,48,0.9);
-*/
+
 
 /* PROPER SETTINGS */
 
