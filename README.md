@@ -1,18 +1,24 @@
 # hyprland-dotfiles
-Dotfiles for Hyprland desktop configuration
+Dotfiles for sway (and now hyprland as a backup) desktop configuration
 
-This configuration uses the Hyprland WM in conjunction with Waybar (for status bar and system tray) and Wofi (for dmenu and power menu).
+My hyprland broke so I swapped to sway for the stability. Also started experimenting with eww instead of waybar.
 
-Some packages you'll need to replicate this are:
-- Hyprland (WM)
-- Waybar (status bar)
-- Wofi (dmenu/power menu)
-- Grim + Slurp (screenshot utils)
-- Hyprpaper (wallpaper)
-- Swaylock (screen lock)
+- sway (WM)
+- eww (status bar and widgets)
+- wofi (dmenu/power menu)
+- grim + slurp (screenshot)
+- waypaper (wallpaper)
+- swaylock (screen lock)
+- pcmanfm-qt (file explorer)
+- sakura (terminal)
+- pavucontrol, pactl (sound stuff)
 
-I also added my neovim configuration folder, that was made following the neovim guide by ThePrimeagen on youtube.
+I also added my neovim configuration folder to have it all in one place.
 
 To do:
-- Create css file with standardized colors for all applications, to make it easier to setup a theme.
-
+- Clean volume control scripts
+- Figure out corner that doesn't round in action center
+- Rewrite network and bluetooth buttons in action center
+- Maybe check why notifications weren't working before I commented the section out
+- Clean music detection script
+- Add a system tray to the bar

@@ -1,0 +1,365 @@
+(defwidget bar []
+    (centerbox :orientation "h"
+      (topstuff)
+      (music)
+      (sidestuff)
+    )
+)
+
+(defwidget bar2 []
+    (centerbox :orientation "h"
+      (topstuff)
+      (midstuff)
+      (sidestuff2)
+    )
+)
+
+(include "./variables.yuck")
+
+(defwidget topstuff []
+    (box :class "topstuff" :orientation "h" :space-evenly false
+      (launcher)
+      (workspaces :array workspacesArray)
+    )
+)
+
+(defwidget music []
+    (button :class "music"
+         :halign "center"
+         :style { music == "" ? "background-color:transparent" : ""}
+         :onclick {ismusicopenornot != false ? `eww open musiccenter --toggle --no-daemonize & eww update ismusicopenornot=false` : ismusicopenornot != true ? `eww open musiccenter --no-daemonize & eww update ismusicopenornot=true` : "Nothing is currently playing."}
+        {ismusicopenornot != false ? "󰅖" : music != "" ? "  ${music}" : ""}
+    )
+)
+
+(defwidget sidestuff []
+    (box :class "sidestuff" :orientation "h" :space-evenly false :halign "end"
+      (meters)
+      (time)
+    )
+)
+
+(defwidget sidestuff2 []
+    (box :class "sidestuff2" :orientation "h" :space-evenly false :halign "end"
+      (time2)
+    )
+)
+
+(defwidget midstuff []
+    (box :class "midstuff" :orientation "h" :space-evenly false :halign "end"
+      (empty)
+    )
+)
+
+(defwidget empty []
+    (box :class "empty"
+         :orientation "h"
+         :space-evenly false
+         :valign "center"
+      (button :onclick ""
+      " ")
+    )
+)
+
+(defwidget launcher []
+    (button 
+      :class "launcher"
+      :onclick "killall wofi || wofi --show drun --allow-images &"
+      ""
+    )
+)
+
+(deflisten workspacesArray :initial "${[1]}"
+    `~/.config/eww/scripts/getWorkspaces.sh`)
+
+(defwidget workspaces [array]
+    (box :class "workspaces"
+         :orientation "h"
+         :space-evenly false
+         :spacing 1
+         :halign "start"
+      (for entry in array
+        (button :onclick `swaymsg workspace "${entry.name}"`
+                :class {entry.focused ? "focused" : ""}
+                `${entry.name}`
+        )
+      )
+    )
+)
+
+(defwidget meters []
+    (box :class "meters" :orientation "h" :halign "end" :spacing 12 :space-evenly "false"
+      (metric :label "󰍛"
+              :value "󱃃 ${temp}°C"
+              :onchange ""
+              :onclick "")
+      (metric :label "󰍛"
+              :value "󰍛  ${memoryusage}%"
+              :onchange ""
+              :onclick "")
+      (metric :label "󰻠"
+              :value "󰻠  ${cpusage}%"
+              :onchange ""
+              :onclick "")
+      (metric :label ""
+              :value {volume != "0" ? "󰕾  ${volume}%" : "󰝟 "}
+              :onchange "pamixer --set-volume {} &"
+              :onclick "./scripts/volume mute &")
+    )
+)
+
+(defwidget metric [label value onchange onclick]
+    (box :orientation "h" 
+         :class "metric"
+         :space-evenly false
+      (button :onclick onclick `${value}`)
+    )
+)
+
+(defwidget time []
+    (box :class "time"
+         :orientation "h"
+         :space-evenly false
+         :valign "center"
+      (button :onclick "eww open actioncenter --toggle --no-daemonize &"
+        :onrightclick "./calendar.sh & eww open calendarcenter --toggle --no-daemonize &"
+      "${hours}:${minutes} ${pmoram}")
+    )
+)
+
+(defwidget time2 []
+    (box :class "time"
+         :orientation "h"
+         :space-evenly false
+         :valign "center"
+      (button :onclick "eww open actioncenter2 --toggle --no-daemonize &"
+        :onrightclick "./calendar.sh & eww open calendarcenter2 --toggle --no-daemonize &"
+      "${hours}:${minutes} ${pmoram}")
+    )
+)
+
+(defpoll
+    hours
+      :interval "1s"
+        "date +%H")
+(defpoll
+    minutes
+      :interval "1s"
+        "date +%M")
+(defpoll
+    pmoram
+      :interval "1s"
+        "date +%p")
+
+;; --------------- Action center stuff --------------------
+
+(defpoll username :interval "100s"
+    "whoami")
+(defpoll hostname :interval "100s"
+    "cat /etc/hostname")
+
+(defwidget topcenter []
+    (box :class "topcenter" :orientation "h" :halign "start" :spacing 10 :space-evenly "false"
+      (image :class "pfp" :valign "start" :style `background-image: url("/home/${username}/.config/pfp.png");` )
+      (box :orientation "v" :space-evenly "false" :valign "center" :spacing 5
+        (label :class "welcometext" :text username :halign "start" :valign "center")
+        (label :text "${username}@${hostname}" :halign "center" :halign "start" :valign "start" :style "color: #1e66f5")
+        (label :text "${uptime}" :halign "start" :valign "start" :halign "start" :style "color: #1e66f5")
+      )
+    )
+)
+(defwidget middlecenter []
+    (box :class "middlecenter" :orientation "v" :valign "center" :halign "center" :spacing 5
+      (scalecenter :label "󰕾"
+          :value "${volume}"
+          :onchange "pactl set-sink-volume @DEFAULT_SINK@ {}%")
+    )
+)
+(defwidget bottomcenter []
+    (box :class "bottomcenter" :valign "end" :orientation "v" :halign "center" :spacing 10  
+      (box :spacing 10
+        (button :class "test" :onclick "eww open actioncenter --toggle & sakura -x nmtui &" {networkstatus == "Wired" ? "" : "󰤭"})
+        ;(button :class { bluetoothstatus != "no" ? "testenabled" : "test"}  :onclick {bluetoothstatus != "no" ? "bluetoothctl power off" : "bluetoothctl power on"}  "")
+        (button :class "test" :onclick "eww open actioncenter --toggle &" "")
+        (button :class "test" :onclick "eww open actioncenter --toggle & pavucontrol &" "󰕾")
+      )
+      (box :spacing 10
+        (button :class "test" :onclick "eww open actioncenter --toggle & grim -g \"$(slurp)\" &" "󰹑  ")
+        (button :class "test" :onclick "eww open actioncenter --toggle & pcmanfm-qt ~ &" " ")
+        (button :class "test" :onclick "eww open actioncenter --toggle & waypaper &" "")
+      )
+    )
+)
+
+(defwidget scalecenter [label value onchange]
+    (box :orientation "h"
+         :class "scalecenter"
+         :space-evenly false
+      (box :class "label" label)
+      (scale :min 0
+             :max 101
+             :active {onchange != ""}
+             :value value
+             :onchange onchange)
+    )
+)
+
+(defwindow actioncenter
+    :monitor 0
+    :exclusive "false"
+    :windowtype "normal"
+    :stacking "fg"
+    :geometry (geometry :x "0"
+                        :y "0"
+                        :width "0px"
+                        :height "0px"
+                        :anchor "top right")
+    :reserve (struts :side "right" :distance "4%")
+    (centerbox :orientation "v"
+      :class "actioncenter"
+      (topcenter)
+      (middlecenter)
+      (bottomcenter)
+    )
+)
+
+(defwindow actioncenter2
+    :monitor 1
+    :exclusive "false"
+    :windowtype "normal"
+    :stacking "fg"
+    :geometry (geometry :x "0"
+                        :y "0"
+                        :width "0px"
+                        :height "0px"
+                        :anchor "top right")
+    :reserve (struts :side "right" :distance "4%")
+    (centerbox :orientation "v"
+      :class "actioncenter"
+      (topcenter)
+      (middlecenter)
+      (bottomcenter)
+    )
+)
+
+(defvar calendarliteral "")
+
+(defwindow calendarcenter
+    :monitor 0
+    :exclusive "false"
+    :windowtype "normal"
+    :stacking "fg"
+    :geometry (geometry :x "0"
+                        :y "0"
+                        :width "0px"
+                        :height "0px"
+                        :anchor "top right")
+    :reserve (struts :side "right" :distance "4%")
+    (box
+      :orientation "v" :space-evenly "false" :spacing 10
+      (box :class "calendarcenter1" (box 
+          :class "calendar"
+          :valign "center"
+          :halign "center"    
+          :orientation "v"
+          :space-evenly "false"
+          (label :class "month" :text "${monthname}  -  ${year}" :halign "start")
+          (box :class "actualcalendar" :orientation "v" :valign "center" :halign "center" :space-evenly "false"
+              (literal :content calendarliteral)
+          )
+      ))
+    )
+)
+
+(defwindow calendarcenter2
+    :monitor 1
+    :exclusive "false"
+    :windowtype "normal"
+    :stacking "fg"
+    :geometry (geometry :x "0"
+                        :y "0"
+                        :width "0px"
+                        :height "0px"
+                        :anchor "top right")
+    :reserve (struts :side "right" :distance "4%")
+    (box
+      :orientation "v" :space-evenly "false" :spacing 10
+      (box :class "calendarcenter1" (box 
+          :class "calendar"
+          :valign "center"
+          :halign "center"    
+          :orientation "v"
+          :space-evenly "false"
+          (label :class "month" :text "${monthname}  -  ${year}" :halign "start")
+          (box :class "actualcalendar" :orientation "v" :valign "center" :halign "center" :space-evenly "false"
+              (literal :content calendarliteral)
+          )
+      ))
+    )
+)
+
+(defwindow musiccenter
+    :monitor 0
+    :exclusive "false"
+    :windowtype "normal"
+    :stacking "overlay"
+    :geometry (geometry :x "0"
+                        :y "0"
+                        :width "100px"
+                        :height "50px"
+                        :anchor "top center")
+    :reserve (struts :side "right" :distance "4%")
+    (box :orientation "h" :space-evenly "false"
+      (box :class "musicart" :style {musicartlink != "" ? `background-image: url("${musicartlink}"); min-height:84px; min-width: 84px; margin-right: 10px;` :  `min-height:0px; min-width: 0px; border:unset;`})
+      (box :class "musiccontrols" :orientation "v" :space-evenly "false" :spacing 5
+        (label :class "musictitle" :text {musicshort} :valign "start" :halign "start")
+        (box :orientation "h"
+            :class "musicscale"
+            :space-evenly false
+            :halign "center"
+          (box :class "label" {musicposition})
+          (scale :min 0
+                :max 101
+                :value musicpositionpercentage)
+          (box :class "label" {musiclength})
+        )
+        (box :class "musicbuttons" :orientation "h" :halign "center" :spacing 30
+          (button :class "musicbutton" :onclick "playerctl previous &" "󰒮")
+          (button :class "musicbutton" :onclick "playerctl play-pause &" {playingorpaused != "Paused" ? "󰏤" : "󰐊" })
+          (button :class "musicbutton" :onclick "playerctl next &" "󰒭")
+        )
+      )
+    )
+)
+
+;; ----------------------------------------------------
+
+(defwindow bar
+    :monitor 0
+    :exclusive "true"
+    :focusable "false"
+    :windowtype "normal"
+    :stacking "fg"
+    :geometry (geometry :x "0"
+                        :y "0"
+                        :width "100%"
+                        :height "40px"
+                        :anchor "top center")
+    :reserve (struts :side "left" :distance "4%")
+    (bar)
+)
+
+(defwindow bar2
+    :monitor 1
+    :exclusive "true"
+    :focusable "false"
+    :windowtype "normal"
+    :stacking "fg"
+    :geometry (geometry :x "0"
+                        :y "0"
+                        :width "100%"
+                        :height "40px"
+                        :anchor "top center")
+    :reserve (struts :side "left" :distance "4%")
+    (bar2)
+)

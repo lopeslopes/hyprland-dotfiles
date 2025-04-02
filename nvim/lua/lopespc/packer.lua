@@ -8,19 +8,19 @@ return require('packer').startup(function(use)
 	use 'wbthomason/packer.nvim'
 
 	use {
-		'nvim-telescope/telescope.nvim', tag = '0.1.1',
-		-- or                            , branch = '0.1.x',
-		requires = { {'nvim-lua/plenary.nvim'} }
-	}
+        'nvim-telescope/telescope.nvim', tag = '0.1.4',
+        -- or                          , branch = '0.1.x',
+        requires = { {'nvim-lua/plenary.nvim'} }
+    }
 
-	use({ 'rose-pine/neovim', as = 'rose-pine' })
-	use({ 'sainnhe/gruvbox-material', as = 'gruvbox-low' })
-	use({ 'loctvl842/monokai-pro.nvim', as = 'monokai-pro' })
 	use({ 'morhetz/gruvbox', as = 'gruvbox' })
 
 	vim.cmd('colorscheme gruvbox')
 
-	use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+	use {
+        'nvim-treesitter/nvim-treesitter',
+        run = ':TSUpdate'
+    }
 	use ('nvim-treesitter/playground')
 	use ('mbbill/undotree')
 

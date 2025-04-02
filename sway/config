@@ -2,7 +2,19 @@ set $mod Mod4
 
 set $term sakura
 set $menu wofi --show drun --allow-images
+set $printscreen grim -g "$(slurp)"
 include /etc/sway/config-vars.d/*
+
+# output HDMI-A-1 resolution 1920x1080@144.000Hz position 0 0
+
+# output HDMI-A-1 resolution 1280x768@59.995Hz position 0 0
+
+# input * {
+#         xkb_layout "br"
+#         xkb_variant "abnt2"
+# 	    xkb_options compose:rctrl
+# }
+
 
 output HDMI-A-1 resolution 1920x1080@59.934Hz position 0 50
 output DVI-D-1 resolution 768x1366@59.790Hz position 1920 0
@@ -19,11 +31,25 @@ default_floating_border pixel 2
 gaps outer 4
 gaps inner 4
 
-client.focused #2b784d #2b784d #2b784d
+client.focused #252525 #252525 #252525 #252525 #252525
 
 exec fcitx5
 exec swww init
-exec waybar
+#exec waybar
+
+exec eww open bar
+exec eww open bar2
+exec autotiling-rs
+# exec ./.config/eww/tiramisupipe.sh
+# exec watch exec ./.config/eww/calendar.sh
+# exec watch -n 0.2 exec ./.config/eww/notifhistory.sh
+
+
+
+# Scratch pad (experimenting)
+bindsym $mod+Shift+minus move scratchpad
+bindsym $mod+minus scratchpad show
+
 
 # Start a terminal
 bindsym $mod+Return exec $term
@@ -35,7 +61,9 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec $menu
 bindsym $mod+e exec "./.config/sway/powermenu.sh"
 
-bindsym $mod+l exec "swaylock -i ~/Imagens/distopia_4.jpg"
+bindsym $mod+l exec "swaylock -i /run/media/hd/pictures/novas/827036.png"
+bindsym $mod+p exec $printscreen
+bindsym $mod+s exec pavucontrol
 
 floating_modifier $mod normal
 
@@ -80,15 +108,6 @@ bindsym $mod+Shift+8 move container to workspace number 8
 bindsym $mod+Shift+9 move container to workspace number 9
 bindsym $mod+Shift+0 move container to workspace number 10
 
-# Layout stuff:
-#bindsym $mod+b splith
-#bindsym $mod+v splitv
-
-# Switch the current container between different layout styles
-#bindsym $mod+s layout stacking
-#bindsym $mod+w layout tabbed
-#bindsym $mod+e layout toggle split
-
 # Make the current focus fullscreen
 bindsym $mod+f fullscreen
 
@@ -101,10 +120,6 @@ bindsym $mod+space focus mode_toggle
 # Move focus to the parent container
 bindsym $mod+a focus parent
 
-# Scratchpad:
-bindsym $mod+Shift+minus move scratchpad
-bindsym $mod+minus scratchpad show
-
 # Resizing containers:
 mode "resize" {
     bindsym Left resize shrink width 10px
@@ -116,17 +131,5 @@ mode "resize" {
     bindsym Escape mode "default"
 }
 bindsym $mod+r mode "resize"
-
-# Status Bar:
-# Read `man 5 sway-bar` for more information about this section.
-# bar {
-#     position top
-#     status_command while date +'%H:%M | %d/%m/%Y '; do sleep 1; done
-#     colors {
-#         statusline #ffffff
-#         background #323232
-#         inactive_workspace #32323200 #32323200 #5c5c5c
-#     }
-# }
 
 include /etc/sway/config.d/*

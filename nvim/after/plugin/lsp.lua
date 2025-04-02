@@ -20,7 +20,7 @@ require('lspconfig').pylsp.setup({
                 },
                 pycodestyle={
                     enabled=true,
-                    ignore={'E501', 'E231', 'E226'},
+                    ignore={'E501', 'E231', 'E226', 'E722', 'W291'},
                     maxLineLength=120
                 }
             }
