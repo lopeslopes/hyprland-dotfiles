@@ -1,0 +1,38 @@
+#!/bin/sh
+down() {
+pactl -d 5
+volume=$(pactl --get-volume)
+[$volume -gt 0 ] && volume=`expr $volume`  
+dunstify -a "VOLUME" "Sound" "Decreasing to $volume%" -h int:value:"$volume" -i audio-volume-low-symbolic -r 2593 -u normal
+canberra-gtk-play -i dialog-error -d "error"
+}
+
+up() {
+pactl -i 5
+volume=$(pactl --get-volume)
+[ $volume -lt 100 ] && volume=`expr $volume`  
+dunstify -a "VOLUME" "Sound" "Increasing to $volume%" -h int:value:"$volume" -i audio-volume-high-symbolic -r 2593 -u normal
+canberra-gtk-play -i dialog-error -d "error"
+}
+
+mute() {
+muted="$(pactl get-sink-mute @DEFAULT_SINK@)"
+muted_b="$(muted=="Mute: yes")"
+if $muted_b; then
+  pactl set-sink-mute @DEFAULT_SINK@ false
+  dunstify -a "VOLUME" "Sound" "Unmuted" -i audio-volume-high-symbolic -r 2593 -u normal
+  muted="$(pactl get-sink-mute @DEFAULT_SINK@)"
+  muted_b="$(muted=="Mute: yes")"
+else 
+  pactl set-sink-mute @DEFAULT_SINK@ true
+  dunstify -a "VOLUME" "Sound" "Muted" -i audio-volume-muted-symbolic -r 2593 -u normal
+  muted="$(pactl get-sink-mute @DEFAULT_SINK@)"
+  muted_b="$(muted=="Mute: yes")"
+fi
+}
+
+case "$1" in
+  up) up;;
+  down) down;;
+  mute) mute;;
+esac
