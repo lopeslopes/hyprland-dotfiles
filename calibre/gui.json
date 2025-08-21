@@ -1,0 +1,743 @@
+{
+  "basic_metadata_widget_splitter_state": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAEAAAADAAAA3gAAAU0AAAEKAf////8BAAAAAQA="
+  },
+  "book_details_widget_splitter_state_vertical": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAEAAAACAAABBgAAAm8B/////wEAAAACAA=="
+  },
+  "book_list_pin_splitter_state": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAEAAAACAAABAAAAAEYA/////wEAAAABAA=="
+  },
+  "bulk-mde-casing-algorithm": "title_case",
+  "bulk_metadata_window_tab": 0,
+  "card_a_view books view state": {
+    "column_alignment": {
+      "size": "center",
+      "timestamp": "center"
+    },
+    "column_positions": {
+      "authors": 2,
+      "collections": 5,
+      "inlibrary": 0,
+      "size": 4,
+      "timestamp": 3,
+      "title": 1
+    },
+    "column_sizes": {
+      "authors": 93,
+      "collections": 103,
+      "inlibrary": 96,
+      "size": 57,
+      "timestamp": 74,
+      "title": 60
+    },
+    "formats_injected": true,
+    "hidden_columns": [],
+    "id_injected": true,
+    "languages_injected": true,
+    "last_modified_injected": true,
+    "path_injected": true,
+    "sort_history": [
+      [
+        "timestamp",
+        false
+      ],
+      [
+        "inlibrary",
+        false
+      ],
+      [
+        "timestamp",
+        false
+      ],
+      [
+        "inlibrary",
+        false
+      ],
+      [
+        "timestamp",
+        false
+      ]
+    ]
+  },
+  "card_b_view books view state": {
+    "column_alignment": {
+      "size": "center",
+      "timestamp": "center"
+    },
+    "column_positions": {
+      "authors": 2,
+      "collections": 5,
+      "inlibrary": 0,
+      "size": 4,
+      "timestamp": 3,
+      "title": 1
+    },
+    "column_sizes": {
+      "authors": 93,
+      "collections": 103,
+      "inlibrary": 96,
+      "size": 57,
+      "timestamp": 74,
+      "title": 60
+    },
+    "formats_injected": true,
+    "hidden_columns": [],
+    "id_injected": true,
+    "languages_injected": true,
+    "last_modified_injected": true,
+    "path_injected": true,
+    "sort_history": [
+      [
+        "timestamp",
+        false
+      ],
+      [
+        "inlibrary",
+        false
+      ],
+      [
+        "timestamp",
+        false
+      ],
+      [
+        "inlibrary",
+        false
+      ],
+      [
+        "timestamp",
+        false
+      ]
+    ]
+  },
+  "choose-merge-dialog-splitter-state": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAEAAAACAAABjQAAAQAA/////wEAAAABAA=="
+  },
+  "custom_colors_for_color_dialog": [
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ]
+  ],
+  "do_not_show_device_open_popup_message_KINDLE2": true,
+  "geometry-of-bulk_metadata_window_geometry": {
+    "frame_geometry": {
+      "height": 1030,
+      "width": 1850,
+      "x": 768,
+      "y": 0
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 1030,
+      "width": 1850,
+      "x": 768,
+      "y": 0
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 1030,
+      "width": 1850,
+      "x": 768,
+      "y": 0
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAMAAAAAAAAACjkAAAQFAAADAAAAAAAAAAo5AAAEBQAAAAECAAAAB4AAAAMAAAAAAAAACjkAAAQF"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": 768,
+        "y": 0
+      },
+      "index_in_screens_list": 1,
+      "manufacturer": "LG Electronics",
+      "model": "M2380A",
+      "name": "HDMI-A-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1366,
+        "width": 2688,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-calibre_main_window_geometry": {
+    "frame_geometry": {
+      "height": 1020,
+      "width": 1900,
+      "x": 0,
+      "y": 50
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 1020,
+      "width": 1900,
+      "x": 0,
+      "y": 50
+    },
+    "maximized": false,
+    "normal_geometry": {
+      "height": 1020,
+      "width": 1900,
+      "x": 0,
+      "y": 50
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAAAAAAAMgAAB2sAAAQtAAAAAAAAADIAAAdrAAAELQAAAAAAAAAAB4AAAAAAAAAAMgAAB2sAAAQt"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": 0,
+        "y": 50
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "LG Electronics",
+      "model": "M2380A",
+      "name": "HDMI-A-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1366,
+        "width": 2688,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-choose-merge-dialog-geometry": {
+    "frame_geometry": {
+      "height": 310,
+      "width": 675,
+      "x": 768,
+      "y": 0
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 310,
+      "width": 675,
+      "x": 768,
+      "y": 0
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 310,
+      "width": 675,
+      "x": 768,
+      "y": 0
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAMAAAAAAAAABaIAAAE1AAADAAAAAAAAAAWiAAABNQAAAAECAAAAB4AAAAMAAAAAAAAABaIAAAE1"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": 768,
+        "y": 0
+      },
+      "index_in_screens_list": 1,
+      "manufacturer": "LG Electronics",
+      "model": "M2380A",
+      "name": "HDMI-A-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1366,
+        "width": 2688,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-duplicates-question-dialog-geometry": {
+    "frame_geometry": {
+      "height": 380,
+      "width": 656,
+      "x": 228,
+      "y": 0
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 380,
+      "width": 656,
+      "x": 228,
+      "y": 0
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 380,
+      "width": 656,
+      "x": 228,
+      "y": 0
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAADkAAAAAAAAA3MAAAF7AAAA5AAAAAAAAANzAAABewAAAAECAAAAB4AAAADkAAAAAAAAA3MAAAF7"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 1,
+      "manufacturer": "LG Electronics",
+      "model": "M2380A",
+      "name": "HDMI-A-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1366,
+        "width": 2688,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-manage-data-files-xx-geometry": {
+    "frame_geometry": {
+      "height": 500,
+      "width": 400,
+      "x": 715,
+      "y": 225
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 500,
+      "width": 400,
+      "x": 715,
+      "y": 225
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 500,
+      "width": 400,
+      "x": 715,
+      "y": 225
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAALLAAAA4QAABFoAAALUAAACywAAAOEAAARaAAAC1AAAAAECAAAAB4AAAALLAAAA4QAABFoAAALU"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 1,
+      "manufacturer": "LG Electronics",
+      "model": "M2380A",
+      "name": "HDMI-A-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1366,
+        "width": 2688,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-match_books_dialog_geometry": {
+    "frame_geometry": {
+      "height": 344,
+      "width": 458,
+      "x": 714,
+      "y": 301
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 344,
+      "width": 458,
+      "x": 714,
+      "y": 301
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 344,
+      "width": 458,
+      "x": 714,
+      "y": 301
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAALKAAABLQAABJMAAAKEAAACygAAAS0AAASTAAAChAAAAAECAAAAB4AAAALKAAABLQAABJMAAAKE"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 1,
+      "manufacturer": "LG Electronics",
+      "model": "M2380A",
+      "name": "HDMI-A-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1366,
+        "width": 2688,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-metasingle_window_geometry3": {
+    "frame_geometry": {
+      "height": 1030,
+      "width": 1850,
+      "x": 0,
+      "y": 0
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 1030,
+      "width": 1850,
+      "x": 0,
+      "y": 0
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 1030,
+      "width": 1850,
+      "x": 0,
+      "y": 0
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAAAAAAAAAAABzkAAAQFAAAAAAAAAAAAAAc5AAAEBQAAAAECAAAAB4AAAAAAAAAAAAAABzkAAAQF"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 1,
+      "manufacturer": "LG Electronics",
+      "model": "M2380A",
+      "name": "HDMI-A-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1366,
+        "width": 2688,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-preferences dialog geometry": {
+    "frame_geometry": {
+      "height": 720,
+      "width": 930,
+      "x": 768,
+      "y": 0
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 720,
+      "width": 930,
+      "x": 768,
+      "y": 0
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 720,
+      "width": 930,
+      "x": 768,
+      "y": 0
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAMAAAAAAAAABqEAAALPAAADAAAAAAAAAAahAAACzwAAAAECAAAAB4AAAAMAAAAAAAAABqEAAALP"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": 768,
+        "y": 0
+      },
+      "index_in_screens_list": 1,
+      "manufacturer": "LG Electronics",
+      "model": "M2380A",
+      "name": "HDMI-A-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1366,
+        "width": 2688,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "grid view visible": false,
+  "library_usage_stats": {
+    "/home/lopes_pc/Calibre Library": 4,
+    "/home/lopes_pc/Documents/Calibre Library": 23
+  },
+  "main_window_central_widget_state": {
+    "layout": "wide",
+    "narrow_desires": {
+      "book_details_height": 0.23059866962305986,
+      "cover_browser_width": 0.34937888198757766,
+      "quick_view_height": 0.25609756097560976,
+      "tag_browser_width": 0.25
+    },
+    "narrow_visibility": {
+      "book_details": true,
+      "book_list": true,
+      "cover_browser": false,
+      "quick_view": false,
+      "tag_browser": true
+    },
+    "wide_desires": {
+      "book_details_width": 0.20084566596194503,
+      "cover_browser_height": 0.28600823045267487,
+      "quick_view_height": 0.23765432098765432,
+      "tag_browser_width": 0.08656873032528856
+    },
+    "wide_visibility": {
+      "book_details": true,
+      "book_list": true,
+      "cover_browser": false,
+      "quick_view": false,
+      "tag_browser": true
+    }
+  },
+  "match_books_dialog_books_table_widths": [
+    100,
+    100,
+    100
+  ],
+  "memory_view books view state": {
+    "column_alignment": {
+      "size": "center",
+      "timestamp": "center"
+    },
+    "column_positions": {
+      "authors": 2,
+      "collections": 5,
+      "inlibrary": 0,
+      "size": 4,
+      "timestamp": 3,
+      "title": 1
+    },
+    "column_sizes": {
+      "authors": 305,
+      "collections": 103,
+      "inlibrary": 96,
+      "size": 58,
+      "timestamp": 92,
+      "title": 547
+    },
+    "formats_injected": true,
+    "hidden_columns": [],
+    "id_injected": true,
+    "languages_injected": true,
+    "last_modified_injected": true,
+    "path_injected": true,
+    "sort_history": [
+      [
+        "title",
+        true
+      ],
+      [
+        "collections",
+        true
+      ],
+      [
+        "title",
+        true
+      ],
+      [
+        "inlibrary",
+        false
+      ],
+      [
+        "timestamp",
+        false
+      ]
+    ]
+  },
+  "previous_sort_order_BooksView": {
+    "authors": true,
+    "series": true
+  },
+  "previous_sort_order_DeviceBooksView": {
+    "collections": true,
+    "title": true
+  },
+  "quick_start_guide_added": true,
+  "qv_open_at_shutdown": false,
+  "recently_used_languages": [
+    "Japanese",
+    "English"
+  ],
+  "replace_scene_breaks_history": [
+    "",
+    "<hr />",
+    "∗ ∗ ∗",
+    "• • •",
+    "♦ ♦ ♦",
+    "† †",
+    "‡ ‡ ‡",
+    "∞ ∞ ∞",
+    "¤ ¤ ¤"
+  ],
+  "search bar visible": true,
+  "tag browser search box visible": false
+}

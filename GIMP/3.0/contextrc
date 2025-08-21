@@ -1,0 +1,16 @@
+# GIMP user context
+
+(tool "gimp-eraser-tool")
+(paint-info "gimp-eraser")
+(foreground
+    (color "R'G'B'A u8" 4 "\353\255\242\377" 0))
+(brush "2. Hardness 100")
+(dynamics "Pressure Size")
+(mybrush "100% Opaque")
+(pattern "Pine")
+(gradient "FG to BG (RGB)")
+(palette "Color History")
+(font "Sans-serif")
+(tool-preset "Core Pointer")
+
+# end of user context

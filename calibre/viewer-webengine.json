@@ -1,0 +1,198 @@
+{
+  "geometry-of-main_window_geometry": {
+    "frame_geometry": {
+      "height": 506,
+      "width": 946,
+      "x": 0,
+      "y": 0
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 506,
+      "width": 946,
+      "x": 0,
+      "y": 0
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 520,
+      "width": 960,
+      "x": 0,
+      "y": 0
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAAAAAAAAAAAA7EAAAH5AAAAAAAAAAAAAAO/AAACBwAAAAECAAAAB4AAAAAAAAAAAAAAA7EAAAH5"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 1,
+      "manufacturer": "LG Electronics",
+      "model": "M2380A",
+      "name": "HDMI-A-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1366,
+        "width": 2688,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-viewer_image_popup_geometry": {
+    "frame_geometry": {
+      "height": 510,
+      "width": 946,
+      "x": 768,
+      "y": 0
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 510,
+      "width": 946,
+      "x": 768,
+      "y": 0
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 524,
+      "width": 960,
+      "x": 768,
+      "y": 0
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAMAAAAAAAAABrEAAAH9AAADAAAAAAAAAAa/AAACCwAAAAECAAAAB4AAAAMAAAAAAAAABrEAAAH9"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": 768,
+        "y": 0
+      },
+      "index_in_screens_list": 1,
+      "manufacturer": "LG Electronics",
+      "model": "M2380A",
+      "name": "HDMI-A-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1366,
+        "width": 2688,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "main_window_state": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAH9AAAAAgAAAAAAAAAAAAAAAPwCAAAAAvsAAAAQAHQAbwBjAC0AZABvAGMAawAAAAAA/////wAAAIkA////+wAAABYAcwBlAGEAcgBjAGgALQBkAG8AYwBrAAAAAAD/////AAAAmQD///8AAAABAAAAAAAAAAD8AgAAAAT7AAAAFgBsAG8AbwBrAHUAcAAtAGQAbwBjAGsAAAAAAP////8AAACCAP////sAAAAcAGIAbwBvAGsAbQBhAHIAawBzAC0AZABvAGMAawAAAAAA/////wAAAPEA////+wAAABwAaQBuAHMAcABlAGMAdABvAHIALQBkAG8AYwBrAAAAAAD/////AAAAEwD////7AAAAHgBoAGkAZwBoAGwAaQBnAGgAdABzAC0AZABvAGMAawAAAAAA/////wAAANYA////AAADsgAAAfoAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAAAAAAAAQAAAB4AYQBjAHQAaQBvAG4AcwBfAHQAbwBvAGwAYgBhAHICAAAAAP////8AAAAAAAAAAA=="
+  },
+  "old_prefs_migrated": true,
+  "session_data": {
+    "controls_help_shown_count": 2,
+    "controls_help_shown_count_rtl_page_progression": 2,
+    "standalone_font_settings": {},
+    "standalone_misc_settings": {
+      "remember_last_read": true,
+      "remember_window_geometry": false,
+      "save_annotations_in_ebook": true,
+      "singleinstance": false
+    },
+    "standalone_recently_opened": [
+      {
+        "key": "/run/media/hd/light_novels/danmachi_ms/danmachi_20_MTL.epub",
+        "pathtoebook": "/run/media/hd/light_novels/danmachi_ms/danmachi_20_MTL.epub",
+        "timestamp": "2024-12-16T14:18:43.416Z",
+        "title": "danmachi 20 MTL"
+      },
+      {
+        "authors": [
+          "Fujino Omori and Suzuhito Yasuda"
+        ],
+        "key": "/home/lopes_pc/Documents/Calibre Library/Fujino Omori/Is It Wrong to Try to Pick Up Girls in a Dungeon_, Vol. 19 (118)/Is It Wrong to Try to Pick Up Girls in a D - Fujino Omori.epub",
+        "pathtoebook": "/home/lopes_pc/Documents/Calibre Library/Fujino Omori/Is It Wrong to Try to Pick Up Girls in a Dungeon_, Vol. 19 (118)/Is It Wrong to Try to Pick Up Girls in a D - Fujino Omori.epub",
+        "timestamp": "2024-12-15T11:51:12.322Z",
+        "title": "Is It Wrong to Try to Pick Up Girls in a Dungeon?, Vol. 19"
+      },
+      {
+        "key": "/home/lopes_pc/Documents/jp-reading-helper/danmachi20_tl.epub",
+        "pathtoebook": "/home/lopes_pc/Documents/jp-reading-helper/danmachi20_tl.epub",
+        "timestamp": "2024-12-15T11:42:35.243Z",
+        "title": "danmachi20 tl"
+      },
+      {
+        "authors": [
+          "Fujino Oomori",
+          "Suzuhito Yasuda"
+        ],
+        "key": "/home/lopes_pc/Documents/jp-reading-helper/danmachi_vol20.epub",
+        "pathtoebook": "/home/lopes_pc/Documents/jp-reading-helper/danmachi_vol20.epub",
+        "timestamp": "2024-12-15T11:02:18.979Z",
+        "title": "Is it wrong to try to pick up girls in a dungeon? Vol. 20"
+      },
+      {
+        "authors": [
+          "大森藤ノ"
+        ],
+        "key": "/home/lopes_pc/Documents/Calibre Library/Da Sen Teng no/danziyonniChu Hui iwoQiu merunohaJian Wei tuteirudarouka20 (120)/danziyonniChu Hui iwoQiu merunohaJian Wei - Da Sen Teng no.epub",
+        "pathtoebook": "/home/lopes_pc/Documents/Calibre Library/Da Sen Teng no/danziyonniChu Hui iwoQiu merunohaJian Wei tuteirudarouka20 (120)/danziyonniChu Hui iwoQiu merunohaJian Wei - Da Sen Teng no.epub",
+        "timestamp": "2024-12-15T08:45:18.597Z",
+        "title": "ダンジョンに出会いを求めるのは間違っているだろうか２０"
+      },
+      {
+        "authors": [
+          "大森 藤ノ"
+        ],
+        "key": "/run/media/lopes_pc/ESD-USB/[GA文庫] 大森 藤ノ - ダンジョンに出会いを求めるのは間違っているだろうか (2013, SBクリエイティブ) - libgen.li.epub",
+        "pathtoebook": "/run/media/lopes_pc/ESD-USB/[GA文庫] 大森 藤ノ - ダンジョンに出会いを求めるのは間違っているだろうか (2013, SBクリエイティブ) - libgen.li.epub",
+        "timestamp": "2024-12-14T03:44:34.226Z",
+        "title": "ダンジョンに出会いを求めるのは間違っているだろうか (GA文庫)"
+      },
+      {
+        "authors": [
+          "Natsu Hyuuga"
+        ],
+        "key": "/tmp/calibre_7.12.0_tmp_l60vrdgo/805udqg8_view_device_book.mobi",
+        "pathtoebook": "/tmp/calibre_7.12.0_tmp_l60vrdgo/805udqg8_view_device_book.mobi",
+        "timestamp": "2024-07-30T01:29:04.199Z",
+        "title": "The Apothecary Diaries: Volume 1"
+      },
+      {
+        "authors": [
+          "Hasekura Isuna"
+        ],
+        "key": "/home/lopes_pc/Documents/Calibre Library/Isuna Hasekura/Spice and Wolf, Vol. 17_ Epilogue (112)/Spice and Wolf, Vol. 17_ Epilogue - Isuna Hasekura.epub",
+        "pathtoebook": "/home/lopes_pc/Documents/Calibre Library/Isuna Hasekura/Spice and Wolf, Vol. 17_ Epilogue (112)/Spice and Wolf, Vol. 17_ Epilogue - Isuna Hasekura.epub",
+        "timestamp": "2024-07-30T01:18:05.211Z",
+        "title": "Ookami to Koushinryou - Spice and Wolf - Volume 17"
+      },
+      {
+        "authors": [
+          "Natsu Hyuuga"
+        ],
+        "key": "/home/lopes_pc/Documents/Calibre Library/Natsu Hyuuga/The Apothecary Diaries_ Volume 1 (47)/The Apothecary Diaries_ Volume - Natsu Hyuuga.mobi",
+        "pathtoebook": "/home/lopes_pc/Documents/Calibre Library/Natsu Hyuuga/The Apothecary Diaries_ Volume 1 (47)/The Apothecary Diaries_ Volume - Natsu Hyuuga.mobi",
+        "timestamp": "2024-06-23T23:39:31.503Z",
+        "title": "The Apothecary Diaries: Volume 1"
+      }
+    ]
+  }
+}

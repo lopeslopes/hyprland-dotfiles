@@ -1,0 +1,4 @@
+[Default Applications]
+image/jpeg=org.geeqie.Geeqie.desktop
+image/webp=qimgv.desktop
+audio/flac=mpv.desktop

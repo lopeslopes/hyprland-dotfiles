@@ -1,0 +1,19 @@
+[ElisaFileIndexer]
+RootPath[$e]=/run/media/hd_1t/music
+
+[FileDialogSize]
+2 screens: Window-Maximized=true
+
+[PlayerSettings]
+UseFavoriteStyleRatings=true
+
+[Shortcuts]
+togglePartyMode=Ctrl+S
+toggle_playlist=F9
+
+[Views]
+InitialFilesViewPath=/run/media/hd_1t/music
+InitialView=AllAlbums
+SortOrderPreferences=Track==DescendingOrder
+SortRolePreferences=Track==FileModificationTime
+ViewStylePreferences=FileName==ListStyle

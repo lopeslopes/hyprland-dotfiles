@@ -1,0 +1,189 @@
+[ColorEffects:Disabled]
+ChangeSelectionColor=
+Color=#1d1d1e
+ColorAmount=0.5
+ColorEffect=3
+ContrastAmount=0
+ContrastEffect=0
+Enable=
+IntensityAmount=0
+IntensityEffect=0
+
+[ColorEffects:Inactive]
+ChangeSelectionColor=true
+Color=#0b0b0b
+ColorAmount=0.025
+ColorEffect=0
+ContrastAmount=0.1
+ContrastEffect=0
+Enable=true
+IntensityAmount=0
+IntensityEffect=0
+
+[Colors:Button]
+BackgroundAlternate=#474747
+BackgroundNormal=#2a2a2a
+DecorationFocus=#ecc248
+DecorationHover=#ecc248
+ForegroundActive=#e2e2e2
+ForegroundInactive=#919191
+ForegroundLink=#8fc9fc
+ForegroundNegative=#ffb3b4
+ForegroundNeutral=#fcb38a
+ForegroundNormal=#e2e2e2
+ForegroundPositive=#00e479
+ForegroundVisited=#ebb2ff
+
+[Colors:Complementary]
+BackgroundAlternate=#111111
+BackgroundNormal=#1d1d1e
+DecorationFocus=#ecc248
+DecorationHover=#ecc248
+ForegroundActive=#e2e2e2
+ForegroundInactive=#919191
+ForegroundLink=#8fc9fc
+ForegroundNegative=#ffb3b4
+ForegroundNeutral=#fcb38a
+ForegroundNormal=#c6c6c6
+ForegroundPositive=#00e479
+ForegroundVisited=#ebb2ff
+
+[Colors:Header]
+BackgroundAlternate=#1d1d1e
+BackgroundNormal=#1d1d1e
+DecorationFocus=#ecc248
+DecorationHover=#ecc248
+ForegroundActive=#e2e2e2
+ForegroundInactive=#919191
+ForegroundLink=#8fc9fc
+ForegroundNegative=#ffb3b4
+ForegroundNeutral=#fcb38a
+ForegroundNormal=#c6c6c6
+ForegroundPositive=#00e479
+ForegroundVisited=#ebb2ff
+
+[Colors:Header][Inactive]
+BackgroundAlternate=#1d1d1e
+BackgroundNormal=#1d1d1e
+DecorationFocus=#ecc248
+DecorationHover=#ecc248
+ForegroundActive=#e2e2e2
+ForegroundInactive=#919191
+ForegroundLink=#8fc9fc
+ForegroundNegative=#ffb3b4
+ForegroundNeutral=#fcb38a
+ForegroundNormal=#c6c6c6
+ForegroundPositive=#00e479
+ForegroundVisited=#ebb2ff
+
+[Colors:Selection]
+BackgroundAlternate=#ecc248
+BackgroundNormal=#ecc248
+DecorationFocus=#ecc248
+DecorationHover=#d2c29d
+ForegroundActive=#3d2e00
+ForegroundInactive=#3d2e00
+ForegroundLink=#004b73
+ForegroundNegative=#920023
+ForegroundNeutral=#753400
+ForegroundNormal=#3d2e00
+ForegroundPositive=#005228
+ForegroundVisited=#74009f
+
+[Colors:Tooltip]
+BackgroundAlternate=#474747
+BackgroundNormal=#1d1d1e
+DecorationFocus=#ecc248
+DecorationHover=#ecc248
+ForegroundActive=#e2e2e2
+ForegroundInactive=#919191
+ForegroundLink=#8fc9fc
+ForegroundNegative=#ffb3b4
+ForegroundNeutral=#fcb38a
+ForegroundNormal=#e2e2e2
+ForegroundPositive=#00e479
+ForegroundVisited=#ebb2ff
+
+[Colors:View]
+BackgroundAlternate=#1d1d1e
+BackgroundNormal=#111111
+DecorationFocus=#ecc248
+DecorationHover=#755b00
+ForegroundActive=#e2e2e2
+ForegroundInactive=#919191
+ForegroundLink=#8fc9fc
+ForegroundNegative=#ffb3b4
+ForegroundNeutral=#fcb38a
+ForegroundNormal=#e2e2e2
+ForegroundPositive=#00e479
+ForegroundVisited=#ebb2ff
+
+[Colors:Window]
+BackgroundAlternate=#474747
+BackgroundNormal=#1d1d1e
+DecorationFocus=#ecc248
+DecorationHover=#ecc248
+ForegroundActive=#8fc9fc
+ForegroundInactive=#919191
+ForegroundLink=#8fc9fc
+ForegroundNegative=#ffb3b4
+ForegroundNeutral=#fcb38a
+ForegroundNormal=#c6c6c6
+ForegroundPositive=#00e479
+ForegroundVisited=#ebb2ff
+
+[DirSelect Dialog]
+DirSelectDialog Size=848,584
+History Items[$e]=file:///run/media/hd_1t/music/%5B1982%5D Mint Jams,file:///run/media/hd_1t/music/2006 Ed Motta - Ao Vivo,file:$HOME/Downloads,file:///run/media/hd_1t/music
+Splitter State=\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00\xa8\x00\x00\x02\xa8\x00\xff\xff\xff\xff\x01\x00\x00\x00\x01\x00
+
+[General]
+ColorScheme=MaterialYouDark
+ColorSchemeHash=d3214c65b4974a49a767cf360e3dea3702a8126a
+LastUsedCustomAccentColor=184,117,220
+TerminalApplication=kitty -1
+XftHintStyle=hintslight
+XftSubPixel=none
+fixed=JetBrainsMono Nerd Font,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+font=Rubik,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+menuFont=Rubik,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+smallestReadableFont=Rubik,9,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+toolBarFont=Rubik,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+
+[Icons]
+Theme=breeze-plus-dark
+
+[KFileDialog Settings]
+Allow Expansion=false
+Automatically select filename extension=true
+Breadcrumb Navigation=true
+Decoration position=2
+LocationCombo Completionmode=5
+PathCombo Completionmode=5
+Show Bookmarks=false
+Show Full Path=false
+Show Inline Previews=true
+Show Preview=false
+Show Speedbar=true
+Show hidden files=false
+Sort by=Name
+Sort directories first=true
+Sort hidden files last=false
+Sort reversed=false
+Speedbar Width=168
+View Style=Simple
+
+[KShortcutsDialog Settings]
+Dialog Size=1858,978
+
+[Sounds]
+Theme=freedesktop
+
+[WM]
+activeBackground=53,53,53
+activeBlend=252,252,252
+activeFont=Rubik,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+activeForeground=226,226,226
+inactiveBackground=81,70,42
+inactiveBlend=161,169,177
+inactiveForeground=242,225,187

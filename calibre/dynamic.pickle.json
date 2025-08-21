@@ -1,0 +1,44 @@
+{
+  "add books dialog dir": "/run/media/hd/light_novels/sword_oratoria",
+  "add books dialog dir-last-used-filter-spec-all-files": false,
+  "catalogs_to_be_synced": {
+    "__class__": "set",
+    "__value__": []
+  },
+  "change cover dialog": "/home/lopes_pc/Documents/jp-reading-helper/files/danmachi_20_jp_epub",
+  "choose library location": "/home/lopes_pc/Documents/Calibre Library",
+  "notified-version-updates": {
+    "__class__": "set",
+    "__value__": [
+      "7.14",
+      "8.1",
+      "7.21",
+      "7.22",
+      "7.15"
+    ]
+  },
+  "s_r_search_mode": 0,
+  "sort_history": [
+    [
+      "series",
+      true
+    ],
+    [
+      "series",
+      false
+    ],
+    [
+      "authors",
+      true
+    ],
+    [
+      "series",
+      true
+    ],
+    [
+      "timestamp",
+      false
+    ]
+  ],
+  "welcome_wizard_was_run": true
+}

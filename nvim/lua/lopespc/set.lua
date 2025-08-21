@@ -17,3 +17,5 @@ vim.opt.termguicolors = true
 
 vim.opt.foldmethod = "indent"
 vim.opt.foldlevel = 99
+
+-- vim.opt.termguicolors = true
